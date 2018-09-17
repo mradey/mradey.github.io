@@ -15,6 +15,41 @@
     <link href="cover.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body {font-family: Arial, Helvetica, sans-serif;}
+      * {box-sizing: border-box;}
+
+      input[type=text], select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+
+      }
+
+      input[type=submit] {
+          background-color: #4CAF50;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+      }
+
+      input[type=submit]:hover {
+          background-color: #45a049;
+      }
+
+      .container {
+          border-radius: 5px;
+          /*background-color: #f2f2f2;*/
+          padding: 20px;
+      }
+    </style>
   </head>
 
   <body class="text-center">
@@ -24,26 +59,31 @@
         <div class="inner">
           <h3 class="masthead-brand">Michael Radey</h3>
           <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="index.html">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
             <a class="nav-link" href="resume.html">Resume</a>
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link active" href="#">Contact</a>
           </nav>
         </div>
       </header>
 
       <main role="main" class="inner cover">
-        <h1 class="cover-heading">About Me.</h1>
-        <img src="pics/LinkedInPic.jpg" height="50%" width="60%" alt="my_pic"/>
-        <p class="lead">My name is Michael Radey and I am a 3rd year Computer Science and Engineering Major at the Ohio State University.</p>
-        <p class="lead">
-          <a href="https://github.com/mradey" class="btn btn-lg btn-secondary">Github</a>
-          <a href="https://www.linkedin.com/in/michael-radey/" class="btn btn-lg btn-secondary">LinkedIn</a>
-        </p>
+        <div class="container">
+  <form action="/action_page.php">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name..">
+    <label for="name">Subject</label>
+    <input type="text" id="email" name="email" placeholder="Your email..">
+    <label for="subject">Message</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
       </main>
 
       <footer class="mastfoot mt-auto">
         <div class="inner">
-          <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+          <p>This is my personal website.  Contact me here</p>
         </div>
       </footer>
     </div>
