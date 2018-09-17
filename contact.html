@@ -68,13 +68,15 @@
 
       <main role="main" class="inner cover">
         <div class="container">
-  <form action="/action_page.php">
+  <form method="post" name="myemailform" action="mail.php">
     <label for="name">Name</label>
     <input type="text" id="name" name="name" placeholder="Your name..">
-    <label for="name">Subject</label>
+    <label for="email">Email</label>
     <input type="text" id="email" name="email" placeholder="Your email..">
-    <label for="subject">Message</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" placeholder="Your subject..">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
 
     <input type="submit" value="Submit">
   </form>
